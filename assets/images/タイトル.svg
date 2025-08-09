@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_2" data-name="レイヤー 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96.25 496.23">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #231815;
+        font-family: 'Honoka_Shin_Mincho_L-83pv-RKSJ-H', 'Honoka Shin Mincho';
+        font-size: 35px;
+        glyph-orientation-vertical: 0deg;
+        text-orientation: upright;
+        writing-mode: tb;
+      }
+
+      .cls-2 {
+        letter-spacing: .1em;
+      }
+
+      .cls-3 {
+        letter-spacing: .08em;
+      }
+
+      .cls-4 {
+        letter-spacing: .06em;
+      }
+
+      .cls-5 {
+        letter-spacing: .06em;
+      }
+
+      .cls-6 {
+        letter-spacing: .02em;
+      }
+
+      .cls-7 {
+        letter-spacing: .04em;
+      }
+    </style>
+  </defs>
+  <g id="_レイヤー_1-2" data-name="レイヤー 1">
+    <text class="cls-1" transform="translate(78.75)"><tspan x="0" y="0">子供と一緒に</tspan><tspan x="-61.25" y="0">安</tspan><tspan class="cls-5" x="-61.25" y="35">心</tspan><tspan class="cls-3" x="-61.25" y="72.1">し</tspan><tspan class="cls-7" x="-61.25" y="103.99">て楽し</tspan><tspan class="cls-4" x="-61.25" y="199.18">めるお</tspan><tspan class="cls-7" x="-61.25" y="289.42">や</tspan><tspan class="cls-6" x="-61.25" y="320.18">つを</tspan><tspan class="cls-7" x="-61.25" y="373.06">選び</tspan><tspan class="cls-2" x="-61.25" y="440.86">た</tspan><tspan x="-61.25" y="473.02">い</tspan></text>
+  </g>
+</svg>
