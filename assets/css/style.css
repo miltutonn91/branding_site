@@ -324,12 +324,18 @@ img{
     margin: 0;
     margin-bottom: 30px;
 }
+
 .more_btn:hover{ 
     opacity: 0.8;
 }
 
 .PICK_UP_list{
-    padding-left: 0;
+    display: flex;
+    justify-content: space-between; /* ← 中央寄せじゃなく全体に広げる */
+    flex-direction: column;
+    gap: 20px; /* 必要なら調整 */
+    margin-bottom: 20px;
+    padding: 0;
 }
 
 .arrow-btn img {
@@ -389,9 +395,10 @@ img{
     margin-bottom: 20px;
 }   
 .PICK_UP_item img{
-    width: 300px;
-    height: 300px;
+    width: 100%;      /* 固定300pxを削除 */
+    height: auto;
     display: block;
+    object-fit: cover; /* トリミングしたい場合のみ */
 }
 .PICK_UP{
     text-align: center;
@@ -419,6 +426,8 @@ img{
     text-align: center;
     gap: 16px;
     margin-bottom: 40px;
+    flex: 1;          /* 均等に広げる */
+    min-width: 0; 
 }
 .arrow-btn {
     display: flex;
@@ -504,7 +513,7 @@ img{
     gap: 160px;
     list-style: none;
     padding: 0;
-    margin-bottom: 30px;
+    margin-bottom: 45px;
 }
 .customer{
     text-align: center;
@@ -797,6 +806,20 @@ transition: all 0.3s ease;
     opacity: 1;
     transform: translateY(0);
 }
+
+.PICK_UP_item img {
+    width: 100%;      /* 固定300pxを削除 */
+    height: auto;
+    display: block;
+    object-fit: cover; /* トリミングしたい場合のみ */
+}
+
+.PICK_UP_item {
+    flex: initial;     /* ← flex:1 を解除 */
+    min-width: auto;   /* ← min-width:0 を解除 */
+    width: 100%;       /* ← 横幅いっぱいに */
+}
+
 /* .logo {
     animation: spin 10s linear infinite;
   } */
@@ -1040,9 +1063,18 @@ body {
     justify-content: center;
     gap: 40px;
 }
-.PICK_UP_item {
-    width: 30%;
+.PICK_UP_list {
+    flex-direction: row;   /* ←ここで横並びに */
+    justify-content: center;
+    gap: 40px;
 }
+
+.PICK_UP_item {
+    flex: 1;
+    min-width: 0;
+    margin-bottom: 40px;
+}
+
 .more_btn {
     margin-top: 40px;
 }
@@ -1072,7 +1104,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 40px;
-    margin-top: 130px;
+    margin-top: 150px;
     margin-bottom: 60px;
     position: relative;
     /* min-height: 900px; */
@@ -1082,11 +1114,11 @@ body {
 .VOICE_list .VOICE_item:first-of-type {
     margin-top: 0; /* お好みの値にしてね */
     
-  }
+}
 .VOICE_item {
     width: 30%;
 }
-  .VOICE_list::before {
+.VOICE_list::before {
     content: "";
     position: absolute;
     /* top: -20px; */
@@ -1104,10 +1136,9 @@ body {
     height: calc(100% + 100px); /* ← 高さを広げる！ */
     top: -50px;              /* ← 上にも伸ばす */
     }
-  
 .voice * {
     vertical-align: baseline !important;
-  }
+}
     /* ======================== フッター ======================== */
 .footer_nav {
     justify-content: space-between;
@@ -1121,7 +1152,7 @@ body {
     align-items: center;
     max-width: 1000px;
     margin: 0 auto 0;
-  }
+}
 
 .footer_1,.footer_2 {
     gap: 40px;
@@ -1153,7 +1184,4 @@ body {
     padding: 20px 2%;
 }
 
-
-  
-  
 }
