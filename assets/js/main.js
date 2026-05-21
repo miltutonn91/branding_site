@@ -1,5 +1,5 @@
 'use strict';
-$(document).ready(function() {
+$(document).ready(function () {
   $('.slider').slick({
     infinite: true,
     speed: 800,
@@ -33,7 +33,7 @@ $(function () {
     e.preventDefault();
     const speed = 500;
     const headerHeight = $('.main_header').outerHeight() || 0;
-    const target = $(this.hash === "#" || this.hash === "" ? 'html' : this.hash);
+    const target = $(this.hash === '#' || this.hash === '' ? 'html' : this.hash);
     const position = target.offset().top - headerHeight;
 
     $('html, body').animate({ scrollTop: position }, speed, 'swing');
@@ -45,15 +45,18 @@ $(function () {
 // fade-in-section の表示制御（←これだけ外に出すのが重要！）
 document.addEventListener('DOMContentLoaded', () => {
   const fadeElems = document.querySelectorAll('.fade-in-section');
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-      }
-    });
-  }, { threshold: 0.1 });
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    },
+    { threshold: 0.1 }
+  );
 
-  fadeElems.forEach(el => observer.observe(el));
+  fadeElems.forEach((el) => observer.observe(el));
 });
 window.addEventListener('load', () => {
   const loader = document.getElementById('loader');
