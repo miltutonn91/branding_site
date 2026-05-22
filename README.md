@@ -28,6 +28,7 @@ https://github.com/miltutonn91/branding_site
 | Figma | デザイン作成 |
 | Photoshop | 画像編集 |
 | Illustrator | 素材・パーツ作成 |
+| Git / GitHub | バージョン管理・ソースコード管理 |
 | GitHub Pages | サイト公開 |
 
 ---
