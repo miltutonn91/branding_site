@@ -18,7 +18,7 @@ https://github.com/miltutonn91/branding_site
 
 ---
 
-## 主要技術
+## 主要技術・ツール
 
 | 技術 | 用途 |
 |---|---|
@@ -30,16 +30,6 @@ https://github.com/miltutonn91/branding_site
 | Illustrator | 素材・パーツ作成 |
 | Git / GitHub | バージョン管理・ソースコード管理 |
 | GitHub Pages | サイト公開 |
-
----
-
-## コマンド一覧
-
-本サイトは静的なHTML / CSS / JavaScriptで制作しているため、ビルドコマンドやパッケージのインストールは不要です。
-
-| 操作 | 内容 |
-|---|---|
-| `index.html` をブラウザで開く | ローカル環境で表示確認 |
 
 ---
 
